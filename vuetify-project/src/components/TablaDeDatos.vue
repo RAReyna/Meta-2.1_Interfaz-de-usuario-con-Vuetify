@@ -48,4 +48,4 @@ const habilidades = ref([
     </tbody>
   </v-table>
 </template>
-```
+``` 

@@ -24,32 +24,26 @@ const fechaActual = computed(() =>
 )
 </script>
 
+
 <template>
-  <v-footer color="primary" class="py-4">
-    <v-container>
-      <v-row align="center" justify="space-between">
-        <v-col cols="12" md="6">
-          <div class="text-subtitle-1 font-weight-bold">
+  <v-footer color="primary" class="py-1">
+    <v-container class="py-0">
+      <v-row align="center" dense>
+        <v-col cols="12" md="6" class="py-1">
+          <div class="text-body-2 font-weight-bold">
             {{ nombre }}
           </div>
-
-          <div class="text-body-2">
-            Matrícula: {{ matricula }}
-          </div>
+          <div class="text-caption">Matrícula: {{ matricula }}</div>
         </v-col>
 
-        <v-col cols="12" md="6" class="text-md-end">
-          <div v-if="contacto" class="text-body-2">
+        <v-col cols="12" md="6" class="py-1 text-md-end">
+          <div v-if="contacto" class="text-caption">
             Contacto: {{ contacto }}
           </div>
-
-          <div class="text-body-2">
+          <div class="text-caption">
             © {{ new Date().getFullYear() }} — {{ nombre }}
           </div>
-
-          <div class="text-caption">
-            Fecha: {{ fechaActual }}
-          </div>
+          <div class="text-caption">Fecha: {{ fechaActual }}</div>
         </v-col>
       </v-row>
     </v-container>

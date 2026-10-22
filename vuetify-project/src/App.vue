@@ -1,16 +1,19 @@
 ```vue
 <script setup>
-import TablaDeDatos from '@/components/TablaDeDatos.vue'
+import AppHeader from '@/components/AppHeader.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import IndexPage from '@/pages/index.vue'
 </script>
 
 <template>
   <v-app>
+    <AppHeader />
+
     <v-main>
-      <v-container>
-        <h1 class="mb-4">Prueba de la tabla</h1>
-        <TablaDeDatos />
-      </v-container>
+      <IndexPage />
     </v-main>
+
+    <AppFooter />
   </v-app>
 </template>
 ```
